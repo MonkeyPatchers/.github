@@ -15,9 +15,30 @@ on:
       - "docs/**"
 
 jobs:
+  # Check if this is an actual project (has package-lock.json) or just the template repo
+  check-project:
+    name: Check Project Type
+    runs-on: ubuntu-latest
+    outputs:
+      is_project: ${{ steps.check.outputs.is_project }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Check for package-lock.json
+        id: check
+        run: |
+          if [ -f "package-lock.json" ]; then
+            echo "is_project=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_project=false" >> $GITHUB_OUTPUT
+          fi
+
   markdown-lint:
     name: Markdown Lint
     runs-on: ubuntu-latest
+    needs: check-project
+    if: needs.check-project.outputs.is_project == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -37,6 +58,8 @@ jobs:
   spell-check:
     name: Spell Check
     runs-on: ubuntu-latest
+    needs: check-project
+    if: needs.check-project.outputs.is_project == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -56,6 +79,8 @@ jobs:
   link-check:
     name: Link Check
     runs-on: ubuntu-latest
+    needs: check-project
+    if: needs.check-project.outputs.is_project == 'true'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
