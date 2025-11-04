@@ -1,0 +1,28 @@
+{
+  "name": "@monkeypatchers/github-templates",
+  "version": "1.0.0",
+  "description": "Organization-wide community and policy files for MonkeyPatchers",
+  "private": true,
+  "scripts": {
+    "lint": "npm run lint:md && npm run lint:spell && npm run lint:format && npm run lint:links",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "lint:spell": "cspell \"**/*.md\" --no-progress --show-suggestions",
+    "lint:format": "prettier --check \"**/*.{md,yml,yaml,json}\"",
+    "lint:links": "markdown-link-check --config .markdown-link-check.json README.md NOTICE LICENSE-docs .github/**/*.md",
+    "format": "prettier --write \"**/*.{md,yml,yaml,json}\"",
+    "format:check": "prettier --check \"**/*.{md,yml,yaml,json}\"",
+    "install-tools": "npm install -g markdownlint-cli2 cspell prettier markdown-link-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MonkeyPatchers/.github.git"
+  },
+  "keywords": [
+    "github",
+    "templates",
+    "organization",
+    "community-health"
+  ],
+  "author": "MonkeyPatchers Contributors",
+  "license": "MIT"
+}

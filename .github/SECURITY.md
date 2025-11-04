@@ -12,6 +12,7 @@ Older releases may receive security fixes on a best-effort basis.
 If you believe you have found a security vulnerability, **please do not open a public issue.**
 
 Instead, report it privately via one of the following:
+
 - Email (preferred): security@monkeypatchers.dev
 - GitHub Security Advisory (if available on the affected repository)
 
@@ -19,11 +20,13 @@ Instead, report it privately via one of the following:
 > In the meantime, please report security issues privately via GitHub’s security advisory feature or DM a maintainer.
 
 Please include:
+
 - A clear description of the issue
 - Steps to reproduce, if possible
 - Any relevant logs, output, or PoC details
 
 We will:
+
 - Acknowledge your report within 3 business days
 - Provide a status update within 7 business days
 - Work with you on coordinated disclosure and timelines
@@ -31,6 +34,7 @@ We will:
 ## Disclosure Policy
 
 We follow responsible disclosure practices. When a fix is ready, we may:
+
 - Publish a security advisory
 - Credit you (with your consent) for the report
 - Provide guidance for affected users
