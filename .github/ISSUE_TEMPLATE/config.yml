@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 GitHub Discussions
+    url: https://github.com/MonkeyPatchers/.github/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 🔒 Security Policy
+    url: https://github.com/MonkeyPatchers/.github/blob/main/.github/SECURITY.md
+    about: View our security policy and responsible disclosure guidelines
+  - name: 📖 Documentation
+    url: https://github.com/MonkeyPatchers/.github
+    about: Browse the complete project documentation

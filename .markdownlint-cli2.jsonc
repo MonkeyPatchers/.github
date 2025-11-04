@@ -1,0 +1,30 @@
+{
+  // Markdown linting configuration
+  "config": {
+    // Allow longer lines (120 instead of 80)
+    "MD013": {
+      "line_length": 120,
+      "heading_line_length": 120,
+      "code_block_line_length": 120,
+      "tables": false
+    },
+    // Allow bare URLs (emails, etc.)
+    "MD034": false,
+    // Allow trailing punctuation in headings
+    "MD026": false,
+    // Allow first line to be any heading level (for templates)
+    "MD041": false,
+    // Allow multiple top-level headings
+    "MD025": false,
+    // Fenced code blocks language - keep this one
+    "MD040": true,
+    // Blanks around fences - keep this one
+    "MD031": true
+  },
+  "gitignore": true,
+  "ignores": [
+    "node_modules/**",
+    ".git/**"
+  ]
+}
+
