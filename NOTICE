@@ -1,0 +1,35 @@
+NOTICE
+
+MonkeyPatchers Open Source Projects
+Copyright (c) 2025 MonkeyPatchers Contributors
+https://monkeypatchers.dev
+
+================================================================================
+
+ADDITIONAL NOTICES AND DISCLAIMERS
+
+This software is provided for educational and experimental purposes. It is not
+certified for enterprise use, and no guarantees are made regarding its fitness
+for commercial, for-profit, or regulated environments.
+
+Use at your own discretion and risk.
+
+================================================================================
+
+TRADEMARK NOTICE
+
+"MonkeyPatchers" and the MonkeyPatchers logo are claimed marks of the
+MonkeyPatchers open-source collective.
+
+Use of these marks must follow community guidelines and may not imply
+endorsement by the MonkeyPatchers collective or its contributors.
+
+For trademark usage guidelines, please contact: legal@monkeypatchers.dev
+
+================================================================================
+
+LICENSING SUMMARY
+
+- Source code: MIT License (see LICENSE file)
+- Documentation and non-code assets: CC BY 4.0 (see LICENSE-docs file)
+
