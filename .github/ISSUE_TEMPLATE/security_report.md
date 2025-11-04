@@ -2,8 +2,8 @@
 name: Security Vulnerability Report
 about: Report a security vulnerability (DO NOT create a public issue!)
 title: ""
-labels: ''
-assignees: ''
+labels: ""
+assignees: ""
 ---
 
 # ⚠️ STOP - Do Not Create This Issue Publicly
@@ -46,4 +46,3 @@ We follow responsible disclosure practices and appreciate your help in keeping o
 ---
 
 **Thank you for helping keep MonkeyPatchers projects secure!**
-

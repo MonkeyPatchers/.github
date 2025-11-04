@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [main, develop]
     paths:
-      - '**.md'
-      - 'docs/**'
+      - "**.md"
+      - "docs/**"
 
 jobs:
   markdown-lint:
@@ -20,8 +20,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install markdownlint-cli2
         run: npm install -g markdownlint-cli2
@@ -39,8 +39,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - name: Install cspell
         run: npm install -g cspell
@@ -61,4 +61,3 @@ jobs:
           args: --verbose --no-progress '**/*.md' '**/*.html'
           fail: true
         continue-on-error: true
-

@@ -3,7 +3,7 @@ name: Feature Request
 about: Suggest a new feature or enhancement
 title: "[FEATURE] "
 labels: enhancement
-assignees: ''
+assignees: ""
 ---
 
 ## Feature Description
@@ -27,17 +27,17 @@ assignees: ''
 
 <!-- Describe specific use cases or scenarios where this feature would be valuable -->
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Benefits
 
 <!-- Explain the benefits of implementing this feature -->
 
-- 
-- 
-- 
+-
+-
+-
 
 ## Implementation Ideas
 
@@ -52,4 +52,3 @@ assignees: ''
 <!-- Link to related issues if any -->
 
 Relates to #
-

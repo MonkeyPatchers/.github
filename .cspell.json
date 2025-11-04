@@ -59,8 +59,5 @@
     "coverage/**",
     ".reports/**"
   ],
-  "ignoreRegExpList": [
-    "/https?://[^\\s]+/g"
-  ]
+  "ignoreRegExpList": ["/https?://[^\\s]+/g"]
 }
-

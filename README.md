@@ -1,44 +1,54 @@
 ## About This Repository
 
-This `.github` repository contains the **organization-wide community and policy files** for the [MonkeyPatchers](https://github.com/MonkeyPatchers) open-source collective.
+This `.github` repository contains the **organization-wide community and policy files** for the
+[MonkeyPatchers](https://github.com/MonkeyPatchers) open-source collective.
 
-GitHub automatically uses these files as defaults for any repository in the organization that doesn’t provide its own versions.
+GitHub automatically uses these files as defaults for any repository in the organization that doesn't
+provide its own versions.
 
 ### 📄 What's Included
 
 #### Community Health Files
-| File | Purpose |
-|------|----------|
-| `.github/CODE_OF_CONDUCT.md` | Sets expectations for respectful collaboration |
-| `.github/CONTRIBUTING.md` | Explains how to propose changes and report issues |
-| `.github/SECURITY.md` | Describes how to report security vulnerabilities privately |
+
+| File                         | Purpose                                                    |
+| ---------------------------- | ---------------------------------------------------------- |
+| `.github/CODE_OF_CONDUCT.md` | Sets expectations for respectful collaboration             |
+| `.github/CONTRIBUTING.md`    | Explains how to propose changes and report issues          |
+| `.github/SECURITY.md`        | Describes how to report security vulnerabilities privately |
 
 #### Legal Files
-| File | Purpose |
-|------|----------|
-| `LICENSE` | Standard MIT License for source code |
-| `LICENSE-docs` | CC BY 4.0 for documentation and non-code assets |
-| `NOTICE` | Additional disclaimers and trademark information |
+
+| File           | Purpose                                          |
+| -------------- | ------------------------------------------------ |
+| `LICENSE`      | Standard MIT License for source code             |
+| `LICENSE-docs` | CC BY 4.0 for documentation and non-code assets  |
+| `NOTICE`       | Additional disclaimers and trademark information |
 
 #### Development Templates
-| File/Directory | Purpose |
-|------|----------|
-| `.github/pull_request_template.md` | Standard pull request template |
-| `.github/ISSUE_TEMPLATE/` | Issue templates for bugs, features, security, and docs |
-| `.github/workflows/` | Starter GitHub Actions workflows (CI, security, docs, release) |
-| `.github/dependabot.yml` | Automated dependency update configuration |
-| `.gitignore` | Comprehensive ignore file for Node.js/TypeScript projects |
+
+| File/Directory                     | Purpose                                                        |
+| ---------------------------------- | -------------------------------------------------------------- |
+| `.github/pull_request_template.md` | Standard pull request template                                 |
+| `.github/ISSUE_TEMPLATE/`          | Issue templates for bugs, features, security, and docs         |
+| `.github/workflows/`               | Starter GitHub Actions workflows (CI, security, docs, release) |
+| `.github/dependabot.yml`           | Automated dependency update configuration                      |
+| `.gitignore`                       | Comprehensive ignore file for Node.js/TypeScript projects      |
 
 #### Documentation
-| File | Purpose |
-|------|----------|
+
+| File        | Purpose            |
+| ----------- | ------------------ |
 | `README.md` | This overview file |
 
 ### ⚙️ How It Works
-- These files act as defaults for all MonkeyPatchers projects when placed under the `.github/` directory of this repository (GitHub requirement).
+
+- These files act as defaults for all MonkeyPatchers projects when placed under the `.github/`
+  directory of this repository (GitHub requirement).
 - Individual repositories can override them by including their own versions.
-- The organization uses **MIT** for source code and **CC BY 4.0** for documentation, images, and other non-code materials.
-- Note: LICENSE files are not inherited by default; each repository should copy `LICENSE`, `LICENSE-docs`, and `NOTICE` into its project root.
+- The organization uses **MIT** for source code and **CC BY 4.0** for documentation, images, and
+  other non-code materials.
+- Note: LICENSE files are not inherited by default; each repository should copy `LICENSE`,
+  `LICENSE-docs`, and `NOTICE` into its project root.
 
 ### 🧰 For New Projects
 
@@ -54,7 +64,7 @@ When creating a new MonkeyPatchers repository:
    [Code of Conduct](https://github.com/MonkeyPatchers/.github/blob/main/.github/CODE_OF_CONDUCT.md)
    and [Security Policy](https://github.com/MonkeyPatchers/.github/blob/main/.github/SECURITY.md).
 
-4. **Customize as Needed**: 
+4. **Customize as Needed**:
    - Override any template by creating your own version in your repository
    - Customize workflows by copying and modifying them in your repo's `.github/workflows/` directory
    - Add project-specific contribution guidelines to your own `CONTRIBUTING.md`
@@ -62,7 +72,9 @@ When creating a new MonkeyPatchers repository:
 5. **Configure Dependabot**: The dependabot configuration will be inherited, but you can override it if needed.
 
 ### 🪪 Legal & Trademark Notice
-**MonkeyPatchers™** and the MonkeyPatchers logo are claimed marks of the MonkeyPatchers open-source collective (see `NOTICE` file for details).  
+
+**MonkeyPatchers™** and the MonkeyPatchers logo are claimed marks of the MonkeyPatchers
+open-source collective (see `NOTICE` file for details).  
 Use of these marks must follow community guidelines and may not imply endorsement.
 
 ---
@@ -142,6 +154,7 @@ Starter workflows included (customize as needed):
 ### Dependabot Configuration
 
 Automated dependency updates for:
+
 - npm packages (weekly, grouped by type)
 - GitHub Actions (weekly)
 - Docker images (weekly, if applicable)

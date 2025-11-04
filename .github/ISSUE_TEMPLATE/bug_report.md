@@ -3,7 +3,7 @@ name: Bug Report
 about: Report a bug or unexpected behavior
 title: "[BUG] "
 labels: bug
-assignees: ''
+assignees: ""
 ---
 
 ## Bug Description
@@ -12,10 +12,10 @@ assignees: ''
 
 ## Steps to Reproduce
 
-1. 
-2. 
-3. 
-4. 
+1.
+2.
+3.
+4.
 
 ## Expected Behavior
 
@@ -37,7 +37,7 @@ assignees: ''
 
 <!-- Paste relevant logs, error messages, or stack traces -->
 
-```
+```text
 Paste logs here
 ```
 
@@ -58,4 +58,3 @@ Paste logs here
 <!-- Link to related issues if any -->
 
 Relates to #
-

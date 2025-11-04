@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install markdownlint-cli2
         run: npm install -g markdownlint-cli2
@@ -52,7 +52,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install cspell
         run: npm install -g cspell
@@ -72,7 +72,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install prettier
         run: npm install -g prettier
@@ -98,7 +98,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install markdown-link-check
         run: npm install -g markdown-link-check
@@ -108,4 +108,3 @@ jobs:
           find . -name "*.md" -not -path "./node_modules/*" -print0 | \
           xargs -0 -n1 markdown-link-check --config .markdown-link-check.json
         continue-on-error: true
-

@@ -3,7 +3,7 @@
 Thanks for considering a contribution!
 
 MonkeyPatchers is about building right-sized, security-minded tools for engineers who like things
-that *just work*. Contributions that simplify, clarify, harden, or improve maintainability are
+that _just work_. Contributions that simplify, clarify, harden, or improve maintainability are
 especially welcome.
 
 ---
@@ -12,9 +12,11 @@ especially welcome.
 
 1. **Fork** the repository you want to contribute to
 2. **Create a branch** for your change:
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
+
 3. **Make your changes** with clear, readable code and comments where helpful
 4. **Run tests / linters** (if provided in the repo)
 5. **Commit** with a descriptive message

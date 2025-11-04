@@ -3,7 +3,7 @@ name: Documentation Improvement
 about: Suggest improvements to documentation
 title: "[DOCS] "
 labels: documentation
-assignees: ''
+assignees: ""
 ---
 
 ## Documentation Issue
@@ -16,7 +16,7 @@ assignees: ''
 
 - **File/Page**: <!-- e.g., README.md, docs/api.md -->
 - **Section**: <!-- e.g., "Installation" section -->
-- **URL** (if applicable): 
+- **URL** (if applicable):
 
 ## Current State
 
@@ -56,4 +56,3 @@ Suggested documentation content here
 <!-- Link to related issues if any -->
 
 Relates to #
-

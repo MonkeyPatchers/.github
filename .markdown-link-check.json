@@ -5,6 +5,15 @@
     },
     {
       "pattern": "^https://127.0.0.1"
+    },
+    {
+      "pattern": "^mailto:"
+    },
+    {
+      "pattern": "^https://monkeypatchers.dev"
+    },
+    {
+      "pattern": "^https://github.com/MonkeyPatchers/.github/blob"
     }
   ],
   "timeout": "20s",
@@ -13,4 +22,3 @@
   "fallbackRetryDelay": "30s",
   "aliveStatusCodes": [200, 206, 999]
 }
-
