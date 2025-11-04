@@ -5,14 +5,33 @@ This `.github` repository contains the **organization-wide community and policy 
 GitHub automatically uses these files as defaults for any repository in the organization that doesn’t provide its own versions.
 
 ### 📄 What's Included
+
+#### Community Health Files
 | File | Purpose |
 |------|----------|
 | `.github/CODE_OF_CONDUCT.md` | Sets expectations for respectful collaboration |
 | `.github/CONTRIBUTING.md` | Explains how to propose changes and report issues |
 | `.github/SECURITY.md` | Describes how to report security vulnerabilities privately |
+
+#### Legal Files
+| File | Purpose |
+|------|----------|
 | `LICENSE` | Standard MIT License for source code |
 | `LICENSE-docs` | CC BY 4.0 for documentation and non-code assets |
 | `NOTICE` | Additional disclaimers and trademark information |
+
+#### Development Templates
+| File/Directory | Purpose |
+|------|----------|
+| `.github/pull_request_template.md` | Standard pull request template |
+| `.github/ISSUE_TEMPLATE/` | Issue templates for bugs, features, security, and docs |
+| `.github/workflows/` | Starter GitHub Actions workflows (CI, security, docs, release) |
+| `.github/dependabot.yml` | Automated dependency update configuration |
+| `.gitignore` | Comprehensive ignore file for Node.js/TypeScript projects |
+
+#### Documentation
+| File | Purpose |
+|------|----------|
 | `README.md` | This overview file |
 
 ### ⚙️ How It Works
@@ -22,16 +41,58 @@ GitHub automatically uses these files as defaults for any repository in the orga
 - Note: LICENSE files are not inherited by default; each repository should copy `LICENSE`, `LICENSE-docs`, and `NOTICE` into its project root.
 
 ### 🧰 For New Projects
+
 When creating a new MonkeyPatchers repository:
-1. Copy `LICENSE`, `LICENSE-docs`, and `NOTICE` from this repo into your project root.
-2. Include a short note in your README linking to the org-wide
+
+1. **Copy License Files**: Copy `LICENSE`, `LICENSE-docs`, and `NOTICE` from this repo into your project root.
+
+2. **Copy Development Files** (optional but recommended):
+   - Copy `.gitignore` if building a Node.js/TypeScript project
+   - The PR template, issue templates, and workflows will be inherited automatically from this org repo
+
+3. **Link to Org Policies**: Include a short note in your README linking to the org-wide
    [Code of Conduct](https://github.com/MonkeyPatchers/.github/blob/main/.github/CODE_OF_CONDUCT.md)
    and [Security Policy](https://github.com/MonkeyPatchers/.github/blob/main/.github/SECURITY.md).
-3. If your project has unique contribution or testing requirements, you can add additional notes in its own `CONTRIBUTING.md`.
+
+4. **Customize as Needed**: 
+   - Override any template by creating your own version in your repository
+   - Customize workflows by copying and modifying them in your repo's `.github/workflows/` directory
+   - Add project-specific contribution guidelines to your own `CONTRIBUTING.md`
+
+5. **Configure Dependabot**: The dependabot configuration will be inherited, but you can override it if needed.
 
 ### 🪪 Legal & Trademark Notice
 **MonkeyPatchers™** and the MonkeyPatchers logo are claimed marks of the MonkeyPatchers open-source collective (see `NOTICE` file for details).  
 Use of these marks must follow community guidelines and may not imply endorsement.
+
+---
+
+## 📚 Template Details
+
+### Issue Templates
+
+This repository provides the following issue templates:
+
+- **Bug Report**: For reporting bugs and unexpected behavior
+- **Feature Request**: For suggesting new features or enhancements
+- **Security Vulnerability**: Guidance on privately reporting security issues (redirects to proper channels)
+- **Documentation Improvement**: For suggesting documentation updates
+
+### GitHub Actions Workflows
+
+Starter workflows included (customize as needed):
+
+- **`ci.yml`**: Continuous integration (lint, test, build)
+- **`security.yml`**: Security scanning (npm audit, Trivy, CodeQL)
+- **`docs.yml`**: Documentation checks (markdown lint, spell check, link validation)
+- **`release.yml`**: Automated release creation on version tags
+
+### Dependabot Configuration
+
+Automated dependency updates for:
+- npm packages (weekly, grouped by type)
+- GitHub Actions (weekly)
+- Docker images (weekly, if applicable)
 
 ---
 
