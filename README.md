@@ -67,6 +67,60 @@ Use of these marks must follow community guidelines and may not imply endorsemen
 
 ---
 
+## 🧪 Local Development
+
+### Running Lints Locally
+
+Before creating a PR, you can run the same linting checks locally:
+
+#### Using npm scripts (recommended):
+
+```bash
+# Install linting tools (one-time setup)
+npm run install-tools
+
+# Run all lints
+npm run lint
+
+# Or run individual checks
+npm run lint:md        # Markdown structure
+npm run lint:spell     # Spell checking
+npm run lint:format    # Format checking
+npm run lint:links     # Link validation
+
+# Auto-fix formatting issues
+npm run format
+```
+
+#### Using the bash script:
+
+```bash
+# Run all checks
+./scripts/lint.sh
+```
+
+### Manual Tool Installation
+
+If you prefer to install tools individually:
+
+```bash
+# Markdown linting
+npm install -g markdownlint-cli2
+
+# Spell checking
+npm install -g cspell
+
+# Format checking
+npm install -g prettier
+
+# Link validation (requires Rust/Cargo)
+cargo install lychee
+# Or on macOS: brew install lychee
+# Or on Linux: see https://github.com/lycheeverse/lychee#installation
+```
+
+---
+
 ## 📚 Template Details
 
 ### Issue Templates
