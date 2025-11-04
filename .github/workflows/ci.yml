@@ -4,23 +4,23 @@ on:
   push:
     branches: [main, develop]
     paths:
-      - 'src/**'
-      - 'packages/**'
-      - 'services/**'
-      - '**.js'
-      - '**.ts'
-      - 'package.json'
-      - 'package-lock.json'
+      - "src/**"
+      - "packages/**"
+      - "services/**"
+      - "**.js"
+      - "**.ts"
+      - "package.json"
+      - "package-lock.json"
   pull_request:
     branches: [main, develop]
     paths:
-      - 'src/**'
-      - 'packages/**'
-      - 'services/**'
-      - '**.js'
-      - '**.ts'
-      - 'package.json'
-      - 'package-lock.json'
+      - "src/**"
+      - "packages/**"
+      - "services/**"
+      - "**.js"
+      - "**.ts"
+      - "package.json"
+      - "package-lock.json"
 
 permissions:
   contents: read
@@ -35,7 +35,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
+
       - name: Check for package-lock.json
         id: check
         run: |
