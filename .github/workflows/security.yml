@@ -3,8 +3,26 @@ name: Security Scan
 on:
   push:
     branches: [main, develop]
+    paths:
+      - "src/**"
+      - "packages/**"
+      - "services/**"
+      - "**.js"
+      - "**.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "Dockerfile"
   pull_request:
     branches: [main, develop]
+    paths:
+      - "src/**"
+      - "packages/**"
+      - "services/**"
+      - "**.js"
+      - "**.ts"
+      - "package.json"
+      - "package-lock.json"
+      - "Dockerfile"
   schedule:
     # Run weekly on Mondays at 9 AM UTC
     - cron: "0 9 * * 1"

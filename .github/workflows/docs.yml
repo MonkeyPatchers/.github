@@ -3,6 +3,11 @@ name: Documentation Check
 on:
   push:
     branches: [main, develop]
+    paths:
+      - "**.md"
+      - "docs/**"
+      - "package.json"
+      - "package-lock.json"
   pull_request:
     branches: [main, develop]
     paths:
