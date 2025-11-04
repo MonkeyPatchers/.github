@@ -57,11 +57,11 @@ run_check "Markdown Lint" "markdownlint-cli2 '**/*.md' '#node_modules'" || FAILE
 run_check "Spell Check" "cspell '**/*.md' --no-progress" || FAILED=1
 run_check "Format Check" "prettier --check '**/*.{md,yml,yaml,json}'" || FAILED=1
 
-# Link check is optional (requires Rust/Cargo)
-if command -v lychee &> /dev/null; then
-    run_check "Link Check" "lychee --verbose --no-progress '**/*.md'" || echo "⚠️  Link check had issues (non-critical)"
+# Link check is optional
+if command -v markdown-link-check &> /dev/null; then
+    run_check "Link Check" "find . -name '*.md' -not -path './node_modules/*' -exec markdown-link-check --config .markdown-link-check.json {} \;" || echo "⚠️  Link check had issues (non-critical)"
 else
-    echo "ℹ️  Link check skipped (lychee not installed)"
+    echo "ℹ️  Link check skipped (markdown-link-check not installed)"
 fi
 
 echo ""

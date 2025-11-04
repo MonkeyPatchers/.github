@@ -95,10 +95,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Link Checker
-        uses: lycheeverse/lychee-action@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          args: --verbose --no-progress '**/*.md'
-          fail: true
+          node-version: '20'
+
+      - name: Install markdown-link-check
+        run: npm install -g markdown-link-check
+
+      - name: Check links in markdown files
+        run: |
+          find . -name "*.md" -not -path "./node_modules/*" -print0 | \
+          xargs -0 -n1 markdown-link-check --config .markdown-link-check.json
         continue-on-error: true
 

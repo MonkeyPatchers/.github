@@ -113,10 +113,8 @@ npm install -g cspell
 # Format checking
 npm install -g prettier
 
-# Link validation (requires Rust/Cargo)
-cargo install lychee
-# Or on macOS: brew install lychee
-# Or on Linux: see https://github.com/lycheeverse/lychee#installation
+# Link validation
+npm install -g markdown-link-check
 ```
 
 ---
